@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <head>
+        <title>Claire's Personal Website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+        body {
+            /* Set background image and properties */
+            /*background-image: url('nycskyline.jpeg');*/ /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-image: url("{{ url_for('static', filename='nycskyline.jpg') }}");
+            background-size: cover; /* Adjust as needed: cover, contain, or a specific size */
+            background-position: center center; /* Adjust as needed: center center, top left, etc. */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            height: 100vh; /* Set the height to the full viewport height */
+            margin: 0; /* Remove default margin */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black; /* Set text color to contrast with the background */
+        }
+        label {
+            color: white;
+            font-weight: bold;
+        }
+        /* Add additional styling as needed */
+
+    </style>
+    </head>
+    <div class="container mt-5" style="background-color: white;"></div>
+    <body>
+        <div class="container mt-5" style="background-color: white;color: black;">
+        <h1>Hi, I'm Claire and welcome to my personal page!</h1>
+        
+            <p>I'm 23 years old! I currently reside in New York City as a wrap up my master's in Computer Science at Columbia! 
+                I used to be a college soccer player at the University of Michigan -- now I'm a washed up and get a little too into 
+                my Sunday soccer league! I also enjoy running and long walks(usually with a new coffee shop or treat as a destination!) to explore this great city I get to currently call home:)
+            </p>
+            <p>
+                You can learn a bit more aobut me on the various pages to the right! 
+            </p>
+        </div>
+        <div class="container mt-5">
+        <form method="post" action="/background">
+            <button type="submit" name="BackgroundButton" value="clicked">About Me</button>
+        </form>
+        <br>
+        <form method="post" action="/internships">
+            <button type="submit" name="AIEButton" value="clicked">"Internship Journey</button>
+        </form>
+        <br>
+        <form method="post" action="/personal">
+            <button type="submit" name="PersonalButton" value="clicked">Personal Interests</button>
+        </form>
+        <br>
+        <form method="post" action="/portfolio">
+            <button type="submit" name="PortfolioButton" value="clicked">Portfolio</button>
+        </form>
+        <br>
+        </div>
+    </body>
+    
+</html>

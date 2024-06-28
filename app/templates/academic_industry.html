@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <head>
+        <title>Where to live</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+        body {
+            /* Set background image and properties */
+            /*background-image: url('nycskyline.jpeg');*/ /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-image: url("{{ url_for('static', filename='nycskyline.jpg') }}");
+            background-size: cover; /* Adjust as needed: cover, contain, or a specific size */
+            background-position: center center; /* Adjust as needed: center center, top left, etc. */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            height: 100vh; /* Set the height to the full viewport height */
+            margin: 0; /* Remove default margin */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+            color: black; /* Set text color to contrast with the background */
+        }
+        label {
+            color: white;
+            font-weight: bold;
+        }
+        /* Add additional styling as needed */
+
+        </style>
+    </head>
+
+<body>
+    <div class="container mt-5" style="background-color: lightblue;color: black; font-size: 11px;">
+    <form method="post" action="/backhome">
+        <button type="submit" name="HomeButton" value="clicked">Back to Home</button>
+    </form>
+    <br>
+    <h1>My "Career" Journey (so far...)</h1>
+        <p>
+            I consider myself a seasoned intern but a rookie in full-time jobs. I'm currently wrapping up my third internship. Now, I don't really want to use this space to just talk about 
+            the feats and projects I did as an intern because in my opinion, that's what a LinkedIn or Resume are for. Instead, I'd rather talk 
+            about the unique journey I've had and the experiences I have gained from each stage thus far. 
+        </p>
+
+        <p>
+            As someone who has interned in a wide variety of fields and industires - believe me, finance and tech could not be more
+            different - I'd like to think I've learned someone different from each one. I will never forget the first day as a Sales 
+            and Trading Internship at Deutsche Bank. I woke up at the crack of dawn to hop on the Q train to my very first day of work. 
+            There had been so many questions wandering through my head the past few weeks - what should I wear? What will the people be 
+            like? And the biggest question of all in finance: how long will the hours be...? Needless to say, the biggest things I learned 
+            from this internship were: 
+            1. Finance was not for me 
+            2. Maybe software was for me 
+            3. Internship and early jobs are a part of a journey not some ultimate destination 
+        </p>
+        <p>
+            Lessons one and two came together on day on the internships when a Python script to read, reform, and write from a Bloomberg terminal 
+            was needed and having some prgoramming experience, it was my task to do it. Needless to say, this was my favorite day of the entire 
+            internship - enough said. To elaborate a little bit on the third point - I vividly remember one day at this intenrship in one of those 
+            "intern chats with higher up people" that companies love to do: the person speaking said something allong the lines of "You're holding 
+            the Willy Wonka ticket in your hand - take advtange of it and work hard! BUT, only take this ticket if it is what you really want." In 
+            that moment I realized, he had put into words exactly what I was feeling the entire internship. Yes it was a great opportunity but it was not 
+            where I saw the future of my career.
+        </p>
+        <p>
+            These two events were probably the most distinct memories I had in that whirlwind of a summer. At first, I walked away from it a little disappointed 
+            that I had wasted what was said to be "the precious Junior year internship," without any true decision or answers about what I wanted to do. I started to
+            realize, though, that sometimes you have to try things you don't necessaryily like as muh to help you fiure out what you do like. I drew back to my favorite 
+            day at the internship: when I was coding. Ultimately, this led me to pursue my Master's degree in Computer Science and begin recruiting for software engineering 
+            internships. 2 years, 2 software internships, and (2 classes away from) a Master's in Computer Science later, and I can safely say I am grateful for my finance 
+            internship two summers ago. 
+        </p>
+        <p>
+            Now, to reflect on my time as a Software Engineering Intern... 
+        </p>
+        <p> 
+            Summer 2023, I worked at SpaceX as a full-stack software engineer building 
+            internal web tools. I learned how to build applications using the flask framework, coincidentally what I am using now to buidl this website! This was an exciting time 
+            for me because it confirmed what I had hoped: that a career starting in software engineering was for me! Oh and I might add, it didn't hurt that I got to see some rockets 
+            launch during my summer there as well! As great as my summer in 2023 was, I concluded I wanted to yet again, try something else - still within software engineering but maybe 
+            different. Why? I realized how much you really learn by trying new things and now with my new outlook on internships, I figured one more summer meant one more new opportunity.
+            Software has so many applications in this day and age. Thus, I decided I would target an industry aside from aerospace. This led my to my current summmer internship role as a 
+            vehicle platform software engineer at Woven by Toyota. This role gave me a unique opportunity to explore both the tech and automotive worlds a bit more. Thus far, I still stand 
+            that software engineering is the career a want to be in - in specifically what industry, that is still to be decided...
+        </p>
+        <p>
+            Eventually, I want to make a platform for interns of all backgrounds to chat and hopefully provide mentorship. Internships have helped me grow a lot, but I wish I had the 
+            knowledge I now have about them going into my first internship. This will be my next personal project coming, erm someday!
+        </p>
+           
+    </div>
+    <div>
+
+    </div>
+</body>

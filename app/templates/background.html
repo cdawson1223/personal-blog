@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <head>
+        <title>Where to live</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+        body {
+            /* Set background image and properties */
+            /*background-image: url('nycskyline.jpeg');*/ /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-image: url("{{ url_for('static', filename='nycskyline.jpg') }}");
+            background-size: cover; /* Adjust as needed: cover, contain, or a specific size */
+            background-position: center center; /* Adjust as needed: center center, top left, etc. */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            height: 100vh; /* Set the height to the full viewport height */
+            margin: 0; /* Remove default margin */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightgreen;
+            color: black; /* Set text color to contrast with the background */
+        }
+        label {
+            color: white;
+            font-weight: bold;
+        }
+        /* Add additional styling as needed */
+
+        </style>
+
+<body>
+    <div class="container mt-5" style="color: black;">
+    <h1>About me: </h1>
+        <p>
+    Hi - I’m Claire! One of my biggest personality traits is that I’m a bit of a nomad. My friends in college used to tease whenever anyone would ask me the question: “so where are you from?” And my response was always - “that’s a loaded question.”
+</p>
+<p>
+    I was born in Chicago, moved to Southern California when I was 7 years old, and partway through high school moved to Arizona! I also spent most of my holidays and summers growing up in a teeny tiny town the southwest corner of Michigan. Since then, of course I have gone to college both in Michigan and New York. Each of these areas has exposed me to different environments, cultures, and certainly a variety of weather! 
+</p>
+<p>
+    I consider myself pretty adaptable to new environments, predominantly because of how much I've moved. Anyone will tell you that new, uncomfortable situations will pull you out of your comfort zone but as the 15 year-old who once begged their parents not to make them move states, the day I graduated high school I actually thanked them for dragging me across the Colorado River 3 years before. And we all know the crazy experiences college and moving to new cities pos-grad will pose! 
+</p>
+<p>
+    My other big identity, up until the last few years was being a soccer player. With that I’ve always been more of a math/techie kid. I would say my experiences from each of these are about as different as they get. That being said, they’ve allowed me to meet such different types of people/personalities and have taught me such different skill sets. And ironically at the end of the day both engineering and team sports - have the same goal: take people with different technical skill sets and different ways of approach but the same goal and see how well they mesh together! 
+</p>
+<p>
+    Now, I’m just a washed up soccer player who runs, (attempts to) break up fights between the hot heads in my Sunday league, and is trying to be the best coder she can be!
+</p>
+
+
+
+<!--      
+<p>
+            I consider myself pretty adaptable to new environments, predominantly because of how much I've moved. I was born in Chicago, moved 
+            to Southern California when I was 7 years old, and partway through high school moved to Arizona! Since then, of course I have gone to college 
+            both in Michigan and New York. Each of these areas has exposed me to different environments, cultures, and certainly a variety of weather! 
+            Anyone will tell you that new, uncomfortable situations will pull you out of your comfort zone but as the 15 year-old who once begged their 
+            parents not to make them move states, the day I graduated high school I actually thanked them for dragging me across the Colorado River 
+            3 years before. And we all know the crazy experiences college and moving to new cities pos-grad will pose! 
+        </p>
+        <p>
+            That being said, most of my identity up until the last few years revolved around running around to soccer practices and games! Wjat this really 
+            taught me was how to interact with completey-different minded people all trying to accomplish the same goal. 
+        </p>
+        
+        <p>
+            
+        </p>
+        --> 
+    </div>
+</body>
