@@ -4,13 +4,9 @@ from flask import render_template, request, redirect, url_for
 @app.route('/')
 @app.route('/index')
 def index():
-    #return "Hello, World!"
-    #if request.form['BackgroundButton'] == 'clicked': #this one is the problem 
-    #    print("this ran")
-    #     return render_template('background.html', title='Home')
     return render_template('homepage.html', title='Home')
 
-@app.route('/submit', methods=['POST'])
+@app.route('/submit', methods=['GET','POST'])
 def submit():
     if request.form['BackgroundButton'] == 'clicked': #this one is the problem 
         print("Background button clicked")
@@ -35,40 +31,36 @@ def submit():
         print("this ran")
         return render_template('background.html', title='Home')'''
 
-@app.route('/background', methods=['POST'])
+@app.route('/background', methods=['GET','POST'])
 def background():
-    #if request.form['HomeButton'] == 'clicked':
-        #return render_template('homepage.html', title='Home')
     if request.form['BackgroundButton'] == 'clicked':
         print("this ran")
         return render_template('background.html', title='Home')
 
 
-@app.route('/internships',methods=['POST'])
+@app.route('/internships',methods=['GET','POST'])
 def academic_industry():
     #if request.form['HomeButton'] == 'clicked': #this part is the issue 
-        #return render_template('homepage.html', title='Home')
+
        
     if request.form['AIEButton'] == 'clicked':
         print("this button be clickin")
         return render_template('academic_industry.html', title='Home')
 
-@app.route('/personal',methods=['POST'])
+@app.route('/personal',methods=['GET','POST'])
 def personal_interests():
     #if request.form['HomeButton'] == 'clicked':
      #   return render_template('homepage.html', title='Home')
     if request.form['PersonalButton'] == 'clicked':
         return render_template('personal_interests.html', title='Home')
 
-@app.route('/portfolio',methods=['POST'])
+@app.route('/portfolio',methods=['GET','POST'])
 def portfolio():
-    if request.form['HomeButton'] == 'clicked':
-        return render_template('homepage.html', title='Home')
     if request.form['PortfolioButton'] == 'clicked':
         print("trying this")
         return render_template('portfolio.html', title='Home')
 
-@app.route('/backhome',methods=['POST'])
+@app.route('/backhome',methods=['GET','POST'])
 def backhome():
     if request.form['HomeButton'] == 'clicked':
         return render_template('homepage.html', title='Home')
